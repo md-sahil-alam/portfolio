@@ -74,7 +74,9 @@ p {
   overflow: hidden;
 }
 
+
 .leftsec{
+  z-index: 2;
   height: 100%;
   width: 60%;
   display: flex;

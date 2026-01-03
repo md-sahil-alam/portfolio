@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import FallingText from "@/components/FallingText";
+import Magnet from "@/components/Magnet";
+import StarBorder from "@/components/StarBorder";
 
 export default function Home() {
   return (
@@ -17,9 +19,18 @@ export default function Home() {
               products with a strong engineering mindset. Experienced with
               Next.js, React, Node.js, and MongoDB.
             </p>
+
+            <Magnet>
+              <StarBorder
+                as="button"
+                className="custom-class"
+                color="cyan"
+                speed="5s">
+                Resume
+              </StarBorder>
+            </Magnet>
           </div>
         </section>
-
         <section className="rightsec">
           <div className="imgdiv">
             <img src="/sahilphoto.jpg" alt="my img" />
