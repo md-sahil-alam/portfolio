@@ -1,4 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
+import FallingText from "@/components/FallingText";
+
 export default function Home() {
   return (
     <main>
@@ -17,7 +20,19 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="rightsec">left side </section>
+        <section className="rightsec">
+          <div className="imgdiv">
+            <img src="/sahilphoto.jpg" alt="my img" />
+            <div className="falling-layer">
+              <FallingText
+                text="sdfgdf • gsdfgsdf  • gsdfgsd "
+                fontSize="2.4rem"
+                mouseConstraintStiffness={1}
+                trigger="auto"
+              />
+            </div>
+          </div>
+        </section>
       </section>
     </main>
   );

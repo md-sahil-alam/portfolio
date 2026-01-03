@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import TransitionProvider from "./components/TransitionProvider";
+// import TransitionProvider from "./components/TransitionProvider";
 
 export const metadata: Metadata = {
   title: "Md Sahil Alam | Software Engineer",
@@ -17,9 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body cz-shortcut-listen="true">
-        <main>
-          <TransitionProvider>{children}</TransitionProvider>
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );
