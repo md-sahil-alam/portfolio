@@ -1,12 +1,31 @@
-import Link from "next/link";
-import Image from "next/image";
 import FallingText from "@/components/FallingText";
 import Magnet from "@/components/Magnet";
 import StarBorder from "@/components/StarBorder";
+import PillNav from "@/components/PillNav";
+import logo from "@/public/next.svg";
 
 export default function Home() {
   return (
     <main>
+      <nav className="sticky z-100 flex justify-center max-w-full">
+        <PillNav
+          logo={logo}
+          logoAlt="Company Logo"
+          items={[
+            { label: "Home", href: "/" },
+            { label: "About", href: "/about" },
+            { label: "Services", href: "/services" },
+            { label: "Contact", href: "/contact" },
+          ]}
+          activeHref="/"
+          className="custom-nav"
+          ease="power2.easeOut"
+          baseColor="#000000"
+          pillColor="#ffffff"
+          hoveredPillTextColor="#ffffff"
+          pillTextColor="#000000"
+        />
+      </nav>
       {/* Hero Section */}
       <section className="main">
         <section className="leftsec">
@@ -36,15 +55,18 @@ export default function Home() {
             <img src="/sahilphoto.jpg" alt="my img" />
             <div className="falling-layer">
               <FallingText
-                text="sdfgdf • gsdfgsdf  • gsdfgsd "
-                fontSize="2.4rem"
-                mouseConstraintStiffness={1}
-                trigger="auto"
+                text=" Humeres Creative Problem-solver Team-Player Understanding"
+                highlightWords={["Creative", "Team-Player", "Problem-solver"]}
+                highlightClass="bg-white/10 px-2 py-1 rounded-md backdrop-blur text-white"
+                fontSize="2.1rem"
               />
             </div>
           </div>
         </section>
       </section>
+
+      {/* Projects */}
+      <section className="prj">dfdsa</section>
     </main>
   );
 }
