@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import SmoothScrollProvider from "./components/SmoothScrollProvider";
 // import TransitionProvider from "./components/TransitionProvider";
 
 export const metadata: Metadata = {
@@ -17,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body cz-shortcut-listen="true">
-        <main>{children}</main>
+        <SmoothScrollProvider>
+          <main>{children}</main>
+        </SmoothScrollProvider>
       </body>
     </html>
   );

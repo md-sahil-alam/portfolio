@@ -25,14 +25,14 @@ const StarBorder = <T extends React.ElementType = "button">({
 
   return (
     <Component
-      className={`star-border-container ${className}`}
+      className={`star-border-container  ${className}`}
       {...(rest as any)}
       style={{
         padding: `${thickness}px 0`,
         ...(rest as any).style,
       }}>
       <div
-        className="border-gradient-bottom"
+        className="border-gradient-bottom "
         style={{
           background: `radial-gradient(circle, ${color}, transparent 10%)`,
           animationDuration: speed,

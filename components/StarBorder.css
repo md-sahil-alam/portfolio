@@ -4,12 +4,16 @@
   position: relative;
   border-radius: 20px;
   overflow: hidden;
+ transition: scale 0.3s ease-in-out;
+}
+.star-border-container:hover{
+  scale: 1.2;
 }
 
 .border-gradient-bottom {
   position: absolute;
   width: 300%;
-  height: 50%;
+  height: 40%;
   opacity: 0.7;
   bottom: -11px;
   right: -250%;
@@ -33,11 +37,11 @@
 .inner-content {
   position: relative;
   background: linear-gradient(to bottom, #060010, #111);
-  border: 1px solid #222;
+  border: 1px solid #33ed4c;
   color: white;
   font-size: 16px;
   text-align: center;
-  padding: 16px 26px;
+  padding: 4px 16px;
   border-radius: 20px;
   z-index: 1;
 }

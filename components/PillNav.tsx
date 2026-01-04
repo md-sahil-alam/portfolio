@@ -37,7 +37,7 @@ const PillNav: React.FC<PillNavProps> = ({
   hoveredPillTextColor = "#060010",
   pillTextColor,
   onMobileMenuClick,
-  initialLoadAnimation = true,
+  initialLoadAnimation = false,
 }) => {
   const resolvedPillTextColor = pillTextColor ?? baseColor;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -288,7 +288,9 @@ const PillNav: React.FC<PillNavProps> = ({
           </a>
         )}
 
-        <div className="pill-nav-items desktop-only" ref={navItemsRef}>
+        <div
+          className="pill-nav-items desktop-only shadow-2xl"
+          ref={navItemsRef}>
           <ul className="pill-list" role="menubar">
             {items.map((item, i) => (
               <li key={item.href} role="none">
