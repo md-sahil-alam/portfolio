@@ -55,8 +55,8 @@ h1 {
   @apply text-7xl font-semibold tracking-tight;
 }
 
-h2 {
-  @apply text-2xl font-semibold tracking-tight mt-12;
+h3 {
+  @apply text-3xl font-semibold tracking-tight mt-8;
 }
 
 p {
@@ -93,7 +93,7 @@ html {
   display: flex;
   align-items: start;
   justify-content: center;
-  flex-direction: column;
+  background-color:white;
 }
 
 .rightsec{
@@ -108,7 +108,7 @@ html {
 .imgdiv{
   position: relative; 
   width: 80%;
-  height: 90%;
+  height: 95%;
   border-bottom-left-radius: 150px;
   border-bottom-right-radius: 150px;
   overflow: hidden;
@@ -252,6 +252,7 @@ html {
 }
 .projects-wrapper {
   position: relative;
+  margin-top: 10vh;
 }
 
 .prj{
@@ -271,7 +272,7 @@ html {
 
 .stprg{
   z-index: 3;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -327,10 +328,71 @@ html {
   border-radius: 5px;
 }
 
-.con input:active{
-  border: 2px rgb(51, 193, 249) solid !important;
+.con textarea{
+  border: 2px rgb(248, 211, 137) solid;
   border-radius: 5px;
 }
+
+.con{
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+}
+
+.conr{
+  display: flex ;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-left: 4rem;
+}
+
+.skills{
+  flex-wrap: wrap !important;
+}
+.skillseft{
+ display: flex;
+ justify-content: center;
+
+}
+
+.skillright{
+ display: flex;
+ justify-content: center;
+}
+
+.herobtn{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.tlsk{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cardsk{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+ padding: 10px;
+ gap: 2rem;
+ background-color: rgb(255, 255, 255);
+ margin-top: 2rem;
+}
+
+.capsule{
+  height: fit-content;
+  padding: 7px;
+  border-radius: 7px;
+  width: fit-content;
+  background-color: #f8e7b0;
+}
+
+
+
 
 
 
