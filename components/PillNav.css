@@ -41,7 +41,8 @@
 }
 
 .pill-logo {
-  width: var(--nav-h);
+  display: none;
+  /* width: var(--nav-h);
   height: var(--nav-h);
   border-radius: 50%;
   background: var(--base, #000);
@@ -49,10 +50,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .pill-logo img {
+  display: none;
   width: 100%;
   height: 100%;
   object-fit: cover;
