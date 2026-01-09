@@ -341,7 +341,7 @@ export default function Home() {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
               aliquam. Quibusdam consectetur perspiciatis necessitatibus placeat
               fuga provident adipisci eligendi, id earum tempore quaerat
-              possimus debitis corrupti alias minus at laboriosam!
+              possimus debitis!
             </p>
           </div>
 
