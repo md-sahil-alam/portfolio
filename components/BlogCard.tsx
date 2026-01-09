@@ -19,10 +19,7 @@ export default function BlogCard() {
           blog
         </Typography>
         <Typography variant="body2" sx={{ color: "text.secondary" }}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-          aperiam repellat ad quisquam harum quae non labore fugit nobis ipsa
-          laborum nulla at reprehenderit quos dolor. Qui laborum perspiciatis
-          nihil!
+          Lorem, at reprehenderit quos dolor. Qui laborum perspiciatis nihil!
         </Typography>
       </CardContent>
       <CardActions>
