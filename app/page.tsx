@@ -300,10 +300,8 @@ export default function Home() {
           <div className="contentprg w-1/2">
             <h1>Project three </h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              cum earum soluta tenetur, quisquam, facere iste deleniti harum
-              quis animi doloribus quasi maiores tempore temporibus aut tempora
-              odio ipsam minus.
+              Lorem, ipsum dolor facere iste deleniti harum quis animi doloribus
+              quasi maiores tempore temporibus aut tempora odio ipsam minus.
             </p>
             <StarBorder
               as="button"
